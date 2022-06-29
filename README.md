@@ -3,11 +3,11 @@ Implementation of Anubis algorithm for Xilinx competition, June 2022
 
 Team Number: 					xohw21-114
 Project Name:					Implementation of Hummingbird Encryption Algorithm
-Link to YouTube Video:				https://youtu.be/mu5e4rd4wVE
+Link to YouTube Video:				https:/
 Link to Project repository: 			https://github.com/eliecudkowicz/Implementation-of-Hummingbird-Encryption-Algorithm
 
 University Name:				Jerusalem College of Technology (JCT)
-Participant 1:					Elie Cudkowicz
+Participant 1:					
 Participant 1 E-mail:				cudkowic@g.jct.ac.il
 Participant 2:					Itamar Yunnian
 Participant 1 E-mail:				yunyan@g.jct.ac.il
