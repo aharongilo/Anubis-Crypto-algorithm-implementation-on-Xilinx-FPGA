@@ -8,7 +8,7 @@ Link to Project repository: 			https://github.com/aharongilo/Anubis-Crypto-algor
 
 University Name:				Jerusalem College of Technology (JCT)
 Participant 1:					Yosef Berger
-Participant 1 E-mail:				cudkowic@g.jct.ac.il
+Participant 1 E-mail:				yosefberger@gmail.com
 Participant 2:					Aharon Gilo
 Participant 1 E-mail:				pinhas02@gmail.com
 Supervisor:					Uri Stroh
