@@ -1,16 +1,16 @@
-# implementation_of_Anubis_algorithm_on_Xilinx_FPGA
+# Anubis Crypto algorithm implementation on Xilinx FPGA
 Implementation of Anubis algorithm for Xilinx competition, June 2022
 
 Team Number: 					xohw22-025
 Project Name:					Anubis Crypto algorithm implementation on Xilinx FPGA
 Link to YouTube Video:				https:/
-Link to Project repository: 			https://github.com/eliecudkowicz/Implementation-of-Hummingbird-Encryption-Algorithm
+Link to Project repository: 			https://github.com/aharongilo/Anubis-Crypto-algorithm-implementation-on-Xilinx-FPGA
 
 University Name:				Jerusalem College of Technology (JCT)
-Participant 1:					
+Participant 1:					Yosef Berger
 Participant 1 E-mail:				cudkowic@g.jct.ac.il
-Participant 2:					Itamar Yunnian
-Participant 1 E-mail:				yunyan@g.jct.ac.il
+Participant 2:					Aharon Gilo
+Participant 1 E-mail:				pinhas02@gmail.com
 Supervisor:					Uri Stroh
 Supervisor E-mail:				stroh@jct.ac.il
 
@@ -18,17 +18,10 @@ Board used:					Basys 3
 Software Version:				Vivado 2020.2
 
 Description of Project:
-We implemented the Hummingbird-2 encryption algorithm on the Artix-7 FPGA of the Basys3 board.
-To send and receive data to and from the board we used Arduino Nano ATmega 328P.
+We implemented the Anubis encryption algorithm on the Artix-7 FPGA of the Basys3 board.
+To send and receive data to and from the board we used Cmod board.
 
 Description of Archive:
-Hummingbird-2 codes: 		all the required codes for the algorithm.
-				Top level is "top_wrapper_arduino"
-				XDC constraint for implementation is "hummingbird_top_wrapper_const"
-				Arduino Code to send and receive data "the_arduinoCode"
-Hummingbird-2 documents:	Hummingbird-2 project report
-				Hummingbird-2 blocks diagram
-				Hummingbird-2 presentation
 
 Instruction to built and test the project:
 Implementation: 			1. In vivado, open a new project
