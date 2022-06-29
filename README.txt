@@ -1,8 +1,8 @@
 # implementation_of_Anubis_algorithm_on_Xilinx_FPGA
 Implementation of Anubis algorithm for Xilinx competition, June 2022
 
-Team Number: 					xohw21-114
-Project Name:					Implementation of Hummingbird Encryption Algorithm
+Team Number: 					xohw22-025
+Project Name:					Anubis Crypto algorithm implementation on Xilinx FPGA
 Link to YouTube Video:				https:/
 Link to Project repository: 			https://github.com/eliecudkowicz/Implementation-of-Hummingbird-Encryption-Algorithm
 
