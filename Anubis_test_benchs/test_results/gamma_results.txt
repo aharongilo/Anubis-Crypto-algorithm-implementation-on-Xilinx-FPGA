@@ -1,0 +1,17 @@
+# time = 200000 | input = debc9a78563412f0efcdab8967452301 | output = 669f6e3fea7d7aeff0eb3df4506ddad3 | expected = 669f6e3fea7d7aeff0eb3df4506ddad3 | PASS
+# time = 400000 | input = efcdab8967452301f0debc9a78563412 | output = f0eb3df4506ddad3ef669f6e3fea7d7a | expected = f0eb3df4506ddad3ef669f6e3fea7d7a | PASS
+# time = 600000 | input = f0debc9a7856341201efcdab89674523 | output = ef669f6e3fea7d7ad3f0eb3df4506dda | expected = ef669f6e3fea7d7ad3f0eb3df4506dda | PASS
+# time = 800000 | input = 01efcdab8967452312f0debc9a785634 | output = d3f0eb3df4506dda7aef669f6e3fea7d | expected = d3f0eb3df4506dda7aef669f6e3fea7d | PASS
+# time = 1000000 | input = 12f0debc9a7856342301efcdab896745 | output = 7aef669f6e3fea7ddad3f0eb3df4506d | expected = 7aef669f6e3fea7ddad3f0eb3df4506d | PASS
+# time = 1200000 | input = 2301efcdab8967453412f0debc9a7856 | output = dad3f0eb3df4506d7d7aef669f6e3fea | expected = dad3f0eb3df4506d7d7aef669f6e3fea | PASS
+# time = 1400000 | input = 3412f0debc9a7856452301efcdab8967 | output = 7d7aef669f6e3fea6ddad3f0eb3df450 | expected = 7d7aef669f6e3fea6ddad3f0eb3df450 | PASS
+# time = 1600000 | input = 452301efcdab8967563412f0debc9a78 | output = 6ddad3f0eb3df450ea7d7aef669f6e3f | expected = 6ddad3f0eb3df450ea7d7aef669f6e3f | PASS
+# time = 1800000 | input = 563412f0debc9a7867452301efcdab89 | output = ea7d7aef669f6e3f506ddad3f0eb3df4 | expected = ea7d7aef669f6e3f506ddad3f0eb3df4 | PASS
+# time = 2000000 | input = 67452301efcdab8978563412f0debc9a | output = 506ddad3f0eb3df43fea7d7aef669f6e | expected = 506ddad3f0eb3df43fea7d7aef669f6e | PASS
+# time = 2200000 | input = 78563412f0debc9a8967452301efcdab | output = 3fea7d7aef669f6ef4506ddad3f0eb3d | expected = 3fea7d7aef669f6ef4506ddad3f0eb3d | PASS
+# time = 2400000 | input = 8967452301efcdab9a78563412f0debc | output = f4506ddad3f0eb3d6e3fea7d7aef669f | expected = f4506ddad3f0eb3d6e3fea7d7aef669f | PASS
+# time = 2600000 | input = 9a78563412f0debcab8967452301efcd | output = 6e3fea7d7aef669f3df4506ddad3f0eb | expected = 6e3fea7d7aef669f3df4506ddad3f0eb | PASS
+# time = 2800000 | input = ab8967452301efcdbc9a78563412f0de | output = 3df4506ddad3f0eb9f6e3fea7d7aef66 | expected = 3df4506ddad3f0eb9f6e3fea7d7aef66 | PASS
+# time = 3000000 | input = bc9a78563412f0decdab8967452301ef | output = 9f6e3fea7d7aef66eb3df4506ddad3f0 | expected = 9f6e3fea7d7aef66eb3df4506ddad3f0 | PASS
+# time = 3200000 | input = cdab8967452301efdebc9a78563412f0 | output = eb3df4506ddad3f0669f6e3fea7d7aef | expected = eb3df4506ddad3f0669f6e3fea7d7aef | PASS
+# time = 3400000 | input = cdab8967452301efdebc9a78563412f0 | output = eb3df4506ddad3f0669f6e3fea7d7aef | expected = eb3df4506ddad3f0669f6e3fea7d7aef | PASS

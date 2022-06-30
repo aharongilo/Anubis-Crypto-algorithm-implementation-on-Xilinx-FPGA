@@ -1,0 +1,16 @@
+# time =   0 | input = debc9a78563412f0efcdab8967452301 | output = 67cd1278de45abf056bc2389ef349a01 | expected = 67cd1278de45abf056bc2389ef349a01 | PASS
+# time = 10000 | input = efcdab8967452301f0debc9a78563412 | output = 78de2389ef56bc0167cd349af045ab12 | expected = 78de2389ef56bc0167cd349af045ab12 | PASS
+# time = 30000 | input = f0debc9a7856341201efcdab89674523 | output = 89ef349af067cd1278de45ab0156bc23 | expected = 89ef349af067cd1278de45ab0156bc23 | PASS
+# time = 50000 | input = 01efcdab8967452312f0debc9a785634 | output = 9af045ab0178de2389ef56bc1267cd34 | expected = 9af045ab0178de2389ef56bc1267cd34 | PASS
+# time = 70000 | input = 12f0debc9a7856342301efcdab896745 | output = ab0156bc1289ef349af067cd2378de45 | expected = ab0156bc1289ef349af067cd2378de45 | PASS
+# time = 90000 | input = 2301efcdab8967453412f0debc9a7856 | output = bc1267cd239af045ab0178de3489ef56 | expected = bc1267cd239af045ab0178de3489ef56 | PASS
+# time = 110000 | input = 3412f0debc9a7856452301efcdab8967 | output = cd2378de34ab0156bc1289ef459af067 | expected = cd2378de34ab0156bc1289ef459af067 | PASS
+# time = 130000 | input = 452301efcdab8967563412f0debc9a78 | output = de3489ef45bc1267cd239af056ab0178 | expected = de3489ef45bc1267cd239af056ab0178 | PASS
+# time = 150000 | input = 563412f0debc9a7867452301efcdab89 | output = ef459af056cd2378de34ab0167bc1289 | expected = ef459af056cd2378de34ab0167bc1289 | PASS
+# time = 170000 | input = 67452301efcdab8978563412f0debc9a | output = f056ab0167de3489ef45bc1278cd239a | expected = f056ab0167de3489ef45bc1278cd239a | PASS
+# time = 190000 | input = 78563412f0debc9a8967452301efcdab | output = 0167bc1278ef459af056cd2389de34ab | expected = 0167bc1278ef459af056cd2389de34ab | PASS
+# time = 210000 | input = 8967452301efcdab9a78563412f0debc | output = 1278cd2389f056ab0167de349aef45bc | expected = 1278cd2389f056ab0167de349aef45bc | PASS
+# time = 230000 | input = 9a78563412f0debcab8967452301efcd | output = 2389de349a0167bc1278ef45abf056cd | expected = 2389de349a0167bc1278ef45abf056cd | PASS
+# time = 250000 | input = ab8967452301efcdbc9a78563412f0de | output = 349aef45ab1278cd2389f056bc0167de | expected = 349aef45ab1278cd2389f056bc0167de | PASS
+# time = 270000 | input = bc9a78563412f0decdab8967452301ef | output = 45abf056bc2389de349a0167cd1278ef | expected = 45abf056bc2389de349a0167cd1278ef | PASS
+# time = 290000 | input = cdab8967452301efdebc9a78563412f0 | output = 56bc0167cd349aef45ab1278de2389f0 | expected = 56bc0167cd349aef45ab1278de2389f0 | PASS
