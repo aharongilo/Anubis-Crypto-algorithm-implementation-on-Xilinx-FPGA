@@ -41,6 +41,6 @@ CMOD-A7:				1. Connect the CMOD-A7 to the Basys3 according to the pins mentionne
 					5. Choose the required chip: Artix-7, XC7A35T1CPG236C (speed -1)
 					6. Run Synthesys, Implementation and generate BitStream.
 					7. Program the device.
-					8. Putty:Insert the data you want to encrypt according to the instructions on the monitor.
+					8. Putty Software: Insert the data you want to encrypt according to the instructions on the monitor.
 					9. On the same window, you get the ciphertext!
-Reset:					Before any new run, reset the basys3 board with the middle Push-button on it.
+Reset:					Before any new run, reset the basys3 board with the middle Push-button (BTNC) onboard.
