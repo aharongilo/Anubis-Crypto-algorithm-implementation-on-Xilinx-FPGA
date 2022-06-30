@@ -1,11 +1,13 @@
 """
 matrix = list of 16 number in hexadecimal, where each number represent one byte
 """
-def Gmult(num1:int, num2:int, pri_polynom:int, power=False):
+
+
+def Gmult(num1: int, num2: int, pri_polynom: int, power=False):
     if power == True:
         base = num1
         powerBy = num2
-        for _ in range(powerBy-1):
+        for _ in range(powerBy - 1):
             temp = 0
             for counter, i in enumerate(bin(num1)[2:]):
                 if i == '1':
@@ -20,25 +22,38 @@ def Gmult(num1:int, num2:int, pri_polynom:int, power=False):
                 temp = temp ^ (pri_polynom << (len(bin(temp)) - len(bin(pri_polynom))))
     else:
         temp = 0
-        for counter,i in enumerate(bin(num2)[2:]):
+        for counter, i in enumerate(bin(num2)[2:]):
             if i == '1':
-                temp = temp^(num1<<len(bin(num2)[2:])-(counter+1))
+                temp = temp ^ (num1 << len(bin(num2)[2:]) - (counter + 1))
         if len(bin(temp)) < len(bin(pri_polynom)):
             return temp
         elif len(bin(temp)) == len(bin(pri_polynom)):
-            return (temp - 2**(len(bin(temp))-1))^(pri_polynom - 2**(len(bin(pri_polynom))-1))
+            return (temp - 2 ** (len(bin(temp)) - 1)) ^ (pri_polynom - 2 ** (len(bin(pri_polynom)) - 1))
         else:
-            while(len(bin(temp)) >= len(bin(pri_polynom))):
-                temp = temp^ (pri_polynom<<(len(bin(temp)) - len(bin(pri_polynom))))
+            while (len(bin(temp)) >= len(bin(pri_polynom))):
+                temp = temp ^ (pri_polynom << (len(bin(temp)) - len(bin(pri_polynom))))
     return temp
 
 
-with open("C:\\users\\yosef\\Desktop\\trygmult2.txt","w") as file:
+'''with open("C:\\users\\yosef\\Desktop\\trygmult2.txt", "w") as file:
     for i in range(256):
         (
-            file.write(f"{i}<={Gmult(i,2,285)};\n")
+            file.write(f"\t\t{i} : data_out <=8'h{hex(Gmult(i, 2, 285))[2:]};\n")
+        )
+open("C:\\users\\yosef\\Desktop\\trygmult4.txt", "w") as file:
+    for i in range(256):
+        (
+            file.write(f"\t\t{i} : data_out <=8'h{hex(Gmult(i, 4, 285))[2:]};\n")
         )
 '''
+with open("C:\\users\\yosef\\Desktop\\trygmult8.txt", "w") as file:
+    for i in range(256):
+        (
+            file.write(f"\t\t{i} : data_out <=8'h{hex(Gmult(i, 8, 285))[2:]};\n")
+        )
+
+
+
 with open("C:\\Users\\aharo\\Desktop\\gamma_test_vector.txt","w") as file:
     for i in range(256):
         temp = hex(i)[2:].zfill(2)
@@ -56,7 +71,7 @@ with open("C:\\Users\\aharo\\Desktop\\gamma_test_vector.txt","w") as file:
         for a in mygen(temp_r,16):
             file.write(f"{a}")
         file.write("\n")
-        
+
 plain = ["00","00","00","00","00","00","00","00","00","00","00","00","00","00","00","00"]
 plain2 = ["D7","4C","1B","10","C7","D8","91","F4","B4","59","1B","2C","DB","93","99","10"]
 key = ["00","00","00","00","00","00","00","00","00","00","00","00","00","00","00","00"]
