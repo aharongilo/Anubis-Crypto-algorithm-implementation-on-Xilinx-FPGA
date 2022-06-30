@@ -4,8 +4,8 @@
 // Participants: Yosef Berger, Aharon Gilo
 // Supervisor:	 Mr. Uri Stroh
 // Date:		 June 2022
-// Description:  key_evolution represent the first function of the key schedule in the algorithm.
-// used modules: gamma, pi, theta, sigma
+// Description:  key_evolution.v represent the first function of the key schedule in the algorithm.
+// Uses modules: gamma.v, pi.v, theta.v, sigma.v
 //------------------------------------------------------------------
 module key_evolution(
 	input clk,
@@ -29,7 +29,7 @@ reg [127:0] gamma_out, pi_out, theta_out,out_psi,key_in;
 reg [1:0] state;
 reg clk_en;
 
-// clock enable, to know when to save functions output in
+// clock enable, states when to save functions output in
 // the registers
 always@(posedge clk)
 begin
@@ -108,4 +108,4 @@ end
 // update the output of the module
 assign evolutioned_key = out_psi;
 
-endmodule
+endmodule //key_evolution

@@ -4,8 +4,8 @@
 // Participants: Yosef Berger, Aharon Gilo
 // Supervisor:	 Mr. Uri Stroh
 // Date:		 June 2022
-// Description:  key_selection module represent the second function of the key schedule in the algorithm.
-// used modules: gamma, omega, tau, theta
+// Description:  key_selection.v represent the second function of the key schedule in the algorithm.
+// Uses modules: gamma.v, omega.v, tau.v, theta.v
 //------------------------------------------------------------------
 
 module key_selection(
@@ -110,4 +110,4 @@ end
 
 assign round_key = selected_key;
 
-endmodule
+endmodule //key_selection

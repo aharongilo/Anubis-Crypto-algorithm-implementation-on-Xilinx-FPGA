@@ -4,9 +4,10 @@
 // Participants: Yosef Berger, Aharon Gilo
 // Supervisor:	 Mr. Uri Stroh
 // Date:		 June 2022
-// Description:  sbox module define the sbox of the algorithm. this module 
-//				 will be use in the gamma module.
-// used modules: none
+// Description:  sbox.v defines the sbox(Substitution Box) of the anubis algorithm. 
+//				 The module is mainly being used in the gamma module.
+//				  
+// Uses modules: none
 //------------------------------------------------------------------
 
 module sbox 
@@ -276,4 +277,4 @@ always@(in)
 	endcase
 
 	
-endmodule
+endmodule //Sbox - Substitution box

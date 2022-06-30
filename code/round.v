@@ -4,9 +4,9 @@
 // Participants: Yosef Berger, Aharon Gilo
 // Supervisor:	 Mr. Uri Stroh
 // Date:		 June 2022
-// Description:  round module represent the rouond function in the algorithm.
-//				 after all the rounds we will get the cipher text				 
-// used modules: gamma, tau, theta, sigma
+// Description:  round.v represent the round function of the anubis algorithm.
+//				 At the last round, we will get the ciphered text				 
+// Uses modules: gamma.v, tau.v, theta.v, sigma.v
 //------------------------------------------------------------------
 module round(
 	input clk,
@@ -119,4 +119,4 @@ end
 // update the output of the module
 assign round_cipher_text = cipher;
 
-endmodule
+endmodule //round

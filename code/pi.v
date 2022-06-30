@@ -4,7 +4,7 @@
 // Participants: Yosef Berger, Aharon Gilo
 // Supervisor:	 Mr. Uri Stroh
 // Date:		 June 2022
-// Description:  this module represent the pi function of the algorithm.
+// Description:  pi.v represent the pi function of the algorithm.
 //				 this function do permutation on the code word, as define
 //				 in the algorithm:
 //				 for a given matrix:
@@ -31,7 +31,7 @@
 //
 //				 the vector form of the matrix: 
 //				 (MSB:)16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1(:LSB)
-// used modules: none
+// Uses modules: none
 //------------------------------------------------------------------
 
 module pi(
@@ -57,4 +57,4 @@ assign P_matrix[15:8]    = matrix[111:104];
 assign P_matrix[7:0]     = matrix[7:0];
 
 
-endmodule
+endmodule //pi

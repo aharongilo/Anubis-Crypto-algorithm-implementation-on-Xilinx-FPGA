@@ -4,14 +4,14 @@
 // Participants: Yosef Berger, Aharon Gilo
 // Supervisor:	 Mr. Uri Stroh
 // Date:		 June 2022
-// Description:  this moduel represent the gamma function of the algorithm
+// Description:  gamma.v represent the gamma function of the algorithm
 //				 this function substitute the value of the input to another value,
 //				 according to the sbox defined in the algorithm
-//               the thing is, the sbox define for 8 bits words, but the words we use in the algorithm
-//				 are 128 bits size.
-//				 therefor, this module will split the input word to 8 bits words, and replace them 
+//               The Anubis Algorithm Sbox receives 8 bits as an input, 
+//				 the data size we deal with is 128 bits.
+//				 therefore, gamma.v will split the data to 8 bits words, and replace them 
 //				 using the sbox module.
-// used modules: sbox
+// Uses modules: sbox.v
 //------------------------------------------------------------------
 
 module gamma(
@@ -37,6 +37,6 @@ sbox s14(data_in[111:104],data_out[111:104]);
 sbox s15(data_in[119:112],data_out[119:112]);
 sbox s16(data_in[127:120],data_out[127:120]);
 
-endmodule
+endmodule //gamma
 
 

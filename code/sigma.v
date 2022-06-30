@@ -4,9 +4,9 @@
 // Participants: Yosef Berger, Aharon Gilo
 // Supervisor:	 Mr. Uri Stroh
 // Date:		 June 2022
-// Description:  sigma module represent the sigma function in teh algorithm
-//				 this function do bitwise xor between 2 inputs.
-// used modules: none
+// Description:  sigma.v represent the sigma function in the anubis algorithm
+//				 The function does bitwise xor between two inputs.
+// Uses modules: none
 //------------------------------------------------------------------
 
 module sigma
@@ -18,4 +18,4 @@ module sigma
 
 assign out = in1^in2;
 
-endmodule
+endmodule //sigma

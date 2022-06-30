@@ -4,7 +4,7 @@
 // Participants: Yosef Berger, Aharon Gilo
 // Supervisor:	 Mr. Uri Stroh
 // Date:		 June 2022
-// Description:  this moduel represent the omega function of the algorithm.
+// Description:  omega.v represent the omega function of the algorithm.
 //  			 the omega function extract the round key for every round, 
 // 				 from the key we inserted to the algorithm.
 // 				 we can insert the algorithm key with size of Nx4 (4<=N<=10)
@@ -33,7 +33,7 @@
 //
 //				 in addition, the multiplying above GF(2^8) will be executed by block ROM module made using the 
 // 				 VIVADO software of the Xilinx company.
-// used modules: LUT in the ROM memory on the board
+// Uses modules: LUT in the ROM memory on the Xilinix Artix 7 FPGA chip
 //------------------------------------------------------------------
 
 module omega
@@ -46,15 +46,23 @@ reg [127:0] mult_result = 0;
 // we will make wires to conect with the block rom modules. for example: mkey_4_4 mean multply by 4, the 4th element in the matrix column.
 wire [7:0] mkey_2_1, mkey_2_2, mkey_2_3, mkey_2_4, mkey_4_1, mkey_4_2, mkey_4_3, mkey_4_4, mkey_8_1, mkey_8_2, mkey_8_3, mkey_8_4, mkey_6_1, mkey_6_2, mkey_6_3, mkey_6_4, mkey_14_1, mkey_14_2, mkey_14_3, mkey_14_4, mkey_78_1, mkey_78_2, mkey_78_3, mkey_78_4, mkey_8_5, mkey_8_6, mkey_8_7, mkey_8_8, mkey_64_1, mkey_64_2, mkey_64_3, mkey_64_4, mkey_3a_1, mkey_3a_2, mkey_3a_3, mkey_3a_4;
 // multiplication second row in V matrix (the first row is all 1) 
-mult_rom C2R1M2 (clk,{3'b000,key[39:32]},mkey_2_1); //column 2 of key matrix, the element in the first row, multiply by 2
-mult_rom C2R2M2 (clk,{3'b000,key[47:40]},mkey_2_2);
-mult_rom C2R3M2 (clk,{3'b000,key[55:48]},mkey_2_3);
-mult_rom C2R4M2 (clk,{3'b000,key[63:56]},mkey_2_4);
-
-mult_rom C3R1M4 (clk,{3'b001,key[71:64]},mkey_4_1);
+//mult_rom C2R1M2 (clk,{3'b000,key[39:32]},mkey_2_1); //column 2 of key matrix, the element in the first row, multiply by 2
+//mult_rom C2R2M2 (clk,{3'b000,key[47:40]},mkey_2_2);
+//mult_rom C2R3M2 (clk,{3'b000,key[55:48]},mkey_2_3);
+//mult_rom C2R4M2 (clk,{3'b000,key[63:56]},mkey_2_4);
+mult_rom2 C2R1M2 (key[39:32],mkey_2_1);
+mult_rom2 C2R2M2 (key[47:40],mkey_2_2);
+mult_rom2 C2R3M2 (key[55:48],mkey_2_3);
+mult_rom2 C2R4M2 (key[63:56],mkey_2_4);
+/*mult_rom C3R1M4 (clk,{3'b001,key[71:64]},mkey_4_1);
 mult_rom C3R2M4 (clk,{3'b001,key[79:72]},mkey_4_2);
 mult_rom C3R3M4 (clk,{3'b001,key[87:80]},mkey_4_3);
 mult_rom C3R4M4 (clk,{3'b001,key[95:88]},mkey_4_4);
+*/
+mult_rom4 C3R1M4 (key[71:64],mkey_4_1);
+mult_rom4 C3R2M4 (key[79:72],mkey_4_2);
+mult_rom4 C3R3M4 (key[87:80],mkey_4_3);
+mult_rom4 C3R4M4 (key[95:88],mkey_4_4);
 
 mult_rom C4R1M8 (clk,{3'b011,key[103:96]},mkey_8_1);
 mult_rom C4R2M8 (clk,{3'b011,key[111:104]},mkey_8_2);
@@ -120,4 +128,4 @@ end
 
 assign extract_key = mult_result;
 
-endmodule
+endmodule //omega

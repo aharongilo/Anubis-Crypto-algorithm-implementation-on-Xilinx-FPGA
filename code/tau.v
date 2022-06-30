@@ -23,7 +23,7 @@
 //				    16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1   
 //				 the vector for transpose matrix will be:
 //				    16 12 8 4 15 11 7 3 14 10 6 2 13 9 5 1                                    	
-// used modules: none
+// Uses modules: none
 //------------------------------------------------------------------
 
 module tau(
@@ -48,4 +48,4 @@ assign T_matrix [23:16]   = matrix[71:64];
 assign T_matrix [15:8] 	  = matrix[39:32];
 assign T_matrix [7:0]     = matrix[7:0];
 
-endmodule
+endmodule  //tau
