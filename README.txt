@@ -3,7 +3,7 @@ Implementation of Anubis algorithm for Xilinx competition, June 2022
 
 Team Number: 					xohw22-025
 Project Name:					Anubis Crypto algorithm implementation on Xilinx FPGA
-Link to YouTube Video:				https:/
+Link to YouTube Video:				https://www.youtube.com/watch?v=MTfLRtm-HsY
 Link to Project repository: 			https://github.com/aharongilo/Anubis-Crypto-algorithm-implementation-on-Xilinx-FPGA
 
 University Name:				Jerusalem College of Technology (JCT)
@@ -14,18 +14,21 @@ Participant 1 E-mail:				pinhas02@gmail.com
 Supervisor:					Uri Stroh
 Supervisor E-mail:				stroh@jct.ac.il
 
-Board used:					Basys 3
+Board used:					Basys 3 by Digilent Inc.
+						Cmod A7 by Digilent Inc.
 Software Version:				Vivado 2020.2
 
 Description of Project:
 We implemented the Anubis encryption algorithm on the Artix-7 FPGA of the Basys3 board.
 To send and receive data to and from the board we used Cmod-A7 board.
 
+Mvp- Anubis Core
+
 Description of Archive:
 
 Instruction to built and test the project:
 Implementation: 			1. In vivado, open a new project
-					2. Add all the source codes from "Anubis codes"
+					2. Add all the source codes from "Anubis core codes", "Basys3 Communication"
 					3. Add the xdc constraint.
 					4. Choose the required chip: Artix-7, XC7A35T1CPG236C (speed -1)
 					5. Run Synthesys, Implementation and generate BitStream.
